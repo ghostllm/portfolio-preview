@@ -3,183 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ítalo Souza | FullStack Developer & DevOps</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ítalo Souza - FullStack Developer & DevOps</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://onprice.vercel.app/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
         <div class="container">
-            <div class="logo">IS</div>
+            <a href="#" class="logo">IS</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#open-source">Open Source</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <header id="about" class="hero">
+    <header class="hero section">
         <div class="container">
-            <div class="hero-content">
-                <h1 class="fade-in">Ítalo Souza</h1>
-                <h2 class="fade-in delay-1">FullStack Developer & DevOps</h2>
-                <p class="headline fade-in delay-2">
-                    Python | JavaScript | AI/LLMs | Agent Orchestration | Flask | React | Spring | APIs | AWS | Automation
-                </p>
-                <div class="hero-stats fade-in delay-3">
-                    <span>📍 Brazil</span>
-                    <span>🎓 BSc CS + MBA Full Stack</span>
-                    <span>💼 4+ Years Experience</span>
+            <div class="hero-content fade-in">
+                <h1>Ítalo Souza</h1>
+                <p class="headline">FullStack Developer & DevOps | Python | JavaScript | AI/LLMs | Agent Orchestration | Flask | React | Spring | APIs | AWS | Automation</p>
+                <div class="hero-info">
+                    <span><i data-lucide="map-pin"></i> Fortaleza, Ceara, Brazil</span>
+                    <span><i data-lucide="users"></i> 413 Connections</span>
                 </div>
-                <div class="hero-cta fade-in delay-4">
-                    <a href="#contact" class="btn primary">Get in Touch</a>
-                    <a href="https://github.com/PlayerGhost" target="_blank" class="btn secondary">GitHub</a>
+                <div class="social-links">
+                    <a href="https://github.com/PlayerGhost" target="_blank" class="btn btn-outline"><i data-lucide="github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/playerghost" target="_blank" class="btn btn-primary"><i data-lucide="linkedin"></i> LinkedIn</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="skills" class="skills">
+    <section id="about" class="section">
+        <div class="container fade-in">
+            <h2 class="section-title">About</h2>
+            <div class="about-card">
+                <p>"Keeping up with market trends, I am committed to contributing to the success of projects and teams with my technical expertise and results-oriented approach. Let's connect! Always open to new opportunities and expanding my professional network."</p>
+                <div class="languages">
+                    <strong>Languages:</strong>
+                    <span class="badge">English (Advanced/C2 CEFR)</span>
+                    <span class="badge">Portuguese (Native)</span>
+                    <span class="badge">Spanish (Basic)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
         <div class="container">
-            <h2 class="section-title">Technical Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <div class="skill-tags">
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">Java</span>
-                        <span class="tag">Kotlin</span>
-                        <span class="tag">Elixir</span>
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>FullStack Developer | DevOps | LLM Orchestrator</h3>
+                        <p class="company">T-REX Platform, Ford Motor Company (via Universidade de Fortaleza - UNIFOR)</p>
+                        <p class="date">Jul 2023 - Present (2y 8m) | Remote</p>
+                        <ul>
+                            <li>Full cycle development (architecture, code, infrastructure, maintenance) of the international T-REX platform that centralizes and optimizes tooling cost modeling for new vehicle programs</li>
+                            <li>Handling millions of strategic engineering and cost records with strict security and data governance</li>
+                            <li>Microservices architecture with Java/Spring Boot and Angular frontend; deployed on GCP via Terraform</li>
+                            <li>Orchestration of multiple LLM-based agents that act as intelligent assistants integrated into engineering workflows</li>
+                            <li>CI/CD pipeline with Tekton + IaC</li>
+                            <li>SSO authentication via Azure AD/MSAL</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Angular</span>
-                        <span class="tag">HTML5</span>
-                        <span class="tag">CSS3</span>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>FullStack Developer | Data Engineer | DevOps</h3>
+                        <p class="company">Universidade de Fortaleza - UNIFOR</p>
+                        <p class="date">Jun 2023 - Present (2y 9m) | Hybrid</p>
+                        <ul>
+                            <li>AI solutions for the Brazilian judiciary system</li>
+                            <li>Tech: Python, JavaScript, Flask, React, Selenium, Docker, AWS, MongoDB</li>
+                            <li>Previous role: Jun 2022 - May 2023 (1y)</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Node.js</span>
-                        <span class="tag">FastAPI</span>
-                        <span class="tag">Flask</span>
-                        <span class="tag">Spring</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Infra</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Docker</span>
-                        <span class="tag">Nginx</span>
-                        <span class="tag">AWS</span>
-                        <span class="tag">Git</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>AI / LLM</h3>
-                    <div class="skill-tags">
-                        <span class="tag">OpenAI</span>
-                        <span class="tag">Gemini</span>
-                        <span class="tag">Claude</span>
-                        <span class="tag">LangChain</span>
-                        <span class="tag">OpenClaw</span>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Co-Founder - FullStack Developer & DevOps</h3>
+                        <p class="company">Dr Scriba</p>
+                        <p class="date">Jun 2023 - Aug 2024 (1y 3m) | Remote, Sao Paulo</p>
+                        <ul>
+                            <li>Key factor in founding and growing Scriba into a revenue-generating platform with 900+ users</li>
+                            <li>Full Stack development, DevOps, infrastructure management</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects">
+    <section id="skills" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category fade-in">
+                    <h3>Backend & Programming</h3>
+                    <div class="skill-badges">
+                        <span class="skill-card">Python</span>
+                        <span class="skill-card">JavaScript</span>
+                        <span class="skill-card">TypeScript</span>
+                        <span class="skill-card">Spring Framework</span>
+                        <span class="skill-card">Java</span>
+                        <span class="skill-card">Flask</span>
+                        <span class="skill-card">APIs</span>
+                        <span class="skill-card">Design Patterns</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>AI & Data Engineering</h3>
+                    <div class="skill-badges">
+                        <span class="skill-card">LLM</span>
+                        <span class="skill-card">Agent Orchestration</span>
+                        <span class="skill-card">Data Science</span>
+                        <span class="skill-card">Data Engineering</span>
+                        <span class="skill-card">Data Collection</span>
+                        <span class="skill-card">Data Structures</span>
+                        <span class="skill-card">Data Modeling</span>
+                        <span class="skill-card">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>DevOps & Infrastructure</h3>
+                    <div class="skill-badges">
+                        <span class="skill-card">DevOps</span>
+                        <span class="skill-card">Docker</span>
+                        <span class="skill-card">AWS</span>
+                        <span class="skill-card">GCP</span>
+                        <span class="skill-card">Terraform</span>
+                        <span class="skill-card">Tekton</span>
+                        <span class="skill-card">CI/CD</span>
+                        <span class="skill-card">Azure AD</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3>Frontend & Others</h3>
+                    <div class="skill-badges">
+                        <span class="skill-card">React</span>
+                        <span class="skill-card">Angular</span>
+                        <span class="skill-card">Full Stack Development</span>
+                        <span class="skill-card">Software Development</span>
+                        <span class="skill-card">Automation</span>
+                        <span class="skill-card">Selenium</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
         <div class="container">
             <h2 class="section-title">Featured Project</h2>
-            <div class="project-card">
-                <div class="project-info">
-                    <div class="project-header">
-                        <img src="https://onprice.vercel.app/favicon.ico" alt="OnPrice Logo" class="project-logo">
-                        <h3>OnPrice</h3>
+            <div class="project-card fade-in">
+                <div class="project-header">
+                    <img src="https://onprice.vercel.app/favicon.ico" alt="OnPrice Logo" class="project-logo">
+                    <h3>OnPrice (BSc Thesis)</h3>
+                </div>
+                <p>Brazil's first hardware-focused price comparison platform. Handles 36,700 hardware components across 8 categories, with approximately 1,227 in stock from 3 retailers.</p>
+                <ul class="project-details">
+                    <li>Microservices architecture, cloud hosting for scalability</li>
+                    <li>Tech: Python, Flask, React, Selenium, Docker, AWS EC2, MongoDB</li>
+                    <li>Team of 6 people</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://onprice.vercel.app/" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
+                </div>
+            </div>
+
+            <h2 class="section-title mt-xl">Open Source</h2>
+            <div class="project-card fade-in">
+                <div class="project-header">
+                    <i data-lucide="github" class="project-icon"></i>
+                    <h3>OpenClaw</h3>
+                </div>
+                <p>Active contributor to OpenClaw - an open-source personal AI assistant framework.</p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-value">4</span>
+                        <span class="stat-label">PRs Submitted</span>
                     </div>
-                    <p class="project-type">BSc Thesis / TCC</p>
-                    <p>Brazil's first hardware-focused price comparison platform. Compare prices for GPUs, CPUs, motherboards, RAM, PSUs, cases, and coolers across Brazilian retailers, with a built-in compatibility checker for custom PC builds.</p>
-                    <div class="project-links">
-                        <a href="https://onprice.vercel.app/" target="_blank" class="link-btn">Live Site</a>
-                        <a href="https://github.com/PlayerGhost/OnPrice-Presentation" target="_blank" class="link-btn">Source Code</a>
+                    <div class="stat-item">
+                        <span class="stat-value">1</span>
+                        <span class="stat-label">Merged into Main</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/openclaw/openclaw" target="_blank" class="btn btn-outline btn-sm">View Repository</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="grid-2">
+                <div class="edu-column fade-in">
+                    <h3>Education</h3>
+                    <div class="card">
+                        <h4>BSc Computer Science</h4>
+                        <p class="company">Universidade de Fortaleza (UNIFOR)</p>
+                        <p class="date">Feb 2018 - Jul 2023 | GPA: 8.96</p>
+                    </div>
+                    <div class="card">
+                        <h4>MBA Full Stack</h4>
+                        <p class="company">Rocketseat</p>
+                        <p class="date">May 2024 - Jun 2025</p>
+                    </div>
+                </div>
+                <div class="cert-column fade-in">
+                    <h3>Certifications</h3>
+                    <div class="card">
+                        <h4>CEFR C2 English</h4>
+                        <p class="company">goFLUENT</p>
+                        <p class="date">Jun 2025</p>
+                    </div>
+                    <div class="card">
+                        <h4>EFSET English Certificate 76/100 (C2 Proficient)</h4>
+                        <p class="company">EF SET</p>
+                        <p class="date">Jun 2023</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="open-source" class="open-source">
-        <div class="container">
-            <h2 class="section-title">Open Source Contributions</h2>
-            <div class="os-card">
-                <h3>OpenClaw</h3>
-                <p>An open-source personal AI assistant framework.</p>
-                <div class="os-stats">
-                    <span class="os-stat">4 PRs Submitted</span>
-                    <span class="os-stat">1 PR Merged</span>
-                </div>
-                <a href="https://github.com/openclaw/openclaw" target="_blank" class="link-btn">View Repository</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
+    <section id="contact" class="section">
+        <div class="container fade-in text-center">
             <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <p>I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
-                    <ul class="contact-links">
-                        <li>Email: <a href="mailto:playerghost13@gmail.com">playerghost13@gmail.com</a></li>
-                        <li>LinkedIn: <a href="https://www.linkedin.com/in/playerghost" target="_blank">playerghost</a></li>
-                        <li>GitHub: <a href="https://github.com/PlayerGhost" target="_blank">PlayerGhost</a></li>
-                    </ul>
-                </div>
+            <p>Always open to new opportunities and expanding my professional network.</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/playerghost" target="_blank" class="contact-item">
+                    <i data-lucide="linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/PlayerGhost" target="_blank" class="contact-item">
+                    <i data-lucide="github"></i>
+                    <span>GitHub</span>
+                </a>
             </div>
+            <p class="footer-text">© 2026 Ítalo Souza. Built with Vanilla HTML/CSS.</p>
         </div>
     </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Ítalo Souza. Built with OpenClaw.</p>
-        </div>
-    </footer>
 
     <script>
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+        // Initialize Lucide icons
+        lucide.createIcons();
 
-        // Simple Intersection Observer for scroll animations
+        // Fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
                 }
             });
-        }, { threshold: 0.1 });
+        }, observerOptions);
 
-        document.querySelectorAll('section, .skill-category, .project-card, .os-card').forEach(el => {
+        document.querySelectorAll('.fade-in').forEach(el => {
             observer.observe(el);
+        });
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                const offset = 80; // Navbar height
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
         });
     </script>
 </body>
